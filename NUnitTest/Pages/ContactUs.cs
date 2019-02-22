@@ -36,8 +36,7 @@ namespace NUnitTest
         public void GoTo()
         {
             contactUs.Click();
-        }
-        //123
+        }       
 
         public void SendYourName(string name)
         {

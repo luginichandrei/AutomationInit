@@ -9,7 +9,7 @@ namespace NUnitTest
     {
         private static IWebDriver webDriver;
 
-        public static ReportsManager reports; // adding the report vaiable
+        //public static ReportsManager reports; // adding the report vaiable
         private static string baseURL = "http://blog.testproject.io/";
 
         private static string browser = "Chrome";
@@ -31,7 +31,7 @@ namespace NUnitTest
                     break;
             }
             webDriver.Manage().Window.Maximize();
-            reports = new ReportsManager(browser, baseURL);  // Creating New Instance of report
+            //reports = new ReportsManager(browser, baseURL);  // Creating New Instance of report
             Goto(baseURL);
         }
 
@@ -48,7 +48,7 @@ namespace NUnitTest
         public static void Goto(string url)
         {
             webDriver.Url = url;
-            reports.verifyURL(url); // Verifying the URL
+            //reports.verifyURL(url); // Verifying the URL
         }
 
         public static void Close()
