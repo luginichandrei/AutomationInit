@@ -14,6 +14,9 @@ namespace NUnitTest
 
         private static string browser = "Chrome";
 
+        /// <summary>
+        /// browser init
+        /// </summary>
         public static void Init()
         {
             switch (browser)
@@ -34,7 +37,7 @@ namespace NUnitTest
             //reports = new ReportsManager(browser, baseURL);  // Creating New Instance of report
             Goto(baseURL);
         }
-
+        
         public static string Title
         {
             get { return webDriver.Title; }
