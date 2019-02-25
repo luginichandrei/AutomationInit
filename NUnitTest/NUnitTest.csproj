@@ -18,7 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Test\Test.csproj" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\Test\bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
